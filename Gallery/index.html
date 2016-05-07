@@ -2,29 +2,68 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
+        html {
+            background: url('7.jpg');
         }
-        .content {
+
+        body {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid black;
+        }
+
+        @media(min-width: 1000px) {
+            img {
+                max-width: 75vw;
+                max-height: 75vh;
+            }
+        }
+
+        .content {
+            align-self: center;
+        }
+
+        .frame {
+            padding: 10px;
+            border-color: #fcf9f5;
+            border: 1px solid black;
+            /* general */
+            background-color: #f1e7c6;
+            background: -moz-linear-gradient(top, #f3eed9, #f1e7c6 50%, #dbc7a7 );
+            background: -webkit-gradient(linear, left top, left bottom, from(#f3eed9), color-stop(0.5, #f1e7c6), to(#dbc7a7) );
+            /* linear gradient for IE 5.5+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#F3EED9', EndColorStr='#DBC7A7');
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .footer {
+            align-self: flex-end;
         }
     </style>
 
 </head>
 <body>
+    <div class="header">This is some header text!</div>
     <div class="content">
-        <div class="header">This is some header text!</div>
-        <div class="main">
-            <div class="left">This is a text about the image.</div>
-            <div class="right">This is the image</div>
+        <div class="frame">
+            <img src="glitter.JPG" />
         </div>
-        <div class="footer">This is a footer text</div>
+        <p>Sparkles: </p>
     </div>
+    <div class="footer">This is a footer text</div>
 </body>
 </html>
