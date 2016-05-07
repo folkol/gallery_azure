@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        html {
+            background: url('background.jpg');
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid black;
+        }
+
+        @media(min-width: 1000px) {
+            img {
+                max-width: 75vw;
+                max-height: 75vh;
+            }
+
+            .content {
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+        }
+
+        .content {
+            align-self: center;
+        }
+
+
+
+        .frame {
+            padding: 10px;
+            border-color: #fcf9f5;
+            border: 1px solid black;
+            /* general */
+            background-color: #f1e7c6;
+            background: -moz-linear-gradient(top, #f3eed9, #f1e7c6 50%, #dbc7a7 );
+            background: -webkit-gradient(linear, left top, left bottom, from(#f3eed9), color-stop(0.5, #f1e7c6), to(#dbc7a7) );
+            /* linear gradient for IE 5.5+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#F3EED9', EndColorStr='#DBC7A7');
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .header {
+            padding-left: 30px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+            .footer div {
+                border: 1px solid black;
+                background-color: white;
+                padding: 5px;
+                margin: 10px;
+            }
+
+            .footer img {
+                height: 100px;
+                vertical-align: top;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="frame">
+            <img src="glitter.jpg" />
+        </div>
+    </div>
+    <div class="footer">
+        <a href="index.html"><div><img src="dimma.jpg" /></div></a>
+        <a href="riksdagen.html"><div><img src="riksdagen.jpg" /></div></a>
+        <a href="riksdagen2.html"><div><img src="riksdagen2.jpg" /></div></a>
+        <a href="bonnier.html"><div><img src="bonnier.jpg" /></div></a>
+        <a href="drottningholm.html"><div><img src="drottningholm.jpg" /></div></a>
+        <a href="essinge.html"><div><img src="essinge.jpg" /></div></a>
+        <a href="field.html"><div><img src="field.jpg" /></div></a>
+        <a href="traneberg.html"><div><img src="traneberg.jpg" /></div></a>
+        <a href="seagull.html"><div><img src="seagull.jpg" /></div></a>
+        <a href="seagull2.html"><div><img src="seagull2.jpg" /></div></a>
+        <a href="mc.html"><div><img src="mc.jpg" /></div></a>
+        <a href="blomma.html"><div><img src="blomma.jpg" /></div></a>
+        <a href="blomma2.html"><div><img src="blomma2.jpg" /></div></a>
+        <a href="blomma3.html"><div><img src="blomma3.jpg" /></div></a>
+        <a href="fjaell.html"><div><img src="fjaell.jpg" /></div></a>
+        <a href="frost.html"><div><img src="frost.jpg" /></div></a>
+        <a href="segel.html"><div><img src="segel.jpg" /></div></a>
+        <a href="snigel.html"><div><img src="snigel.jpg" /></div></a>
+        <a href="spindel.html"><div><img src="spindel.jpg" /></div></a>
+        <a href="zombie.html"><div><img src="zombie.jpg" /></div></a>
+        <a href="glitter.html"><div><img src="glitter.jpg" /></div></a>
+        <a href="fyrverkeri.html"><div><img src="fyrverkeri.jpg" /></div></a>
+        <a href="sunset.html"><div><img src="sunset.jpg" /></div></a>
+    </div>
+</body>
+</html>
